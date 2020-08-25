@@ -11,7 +11,7 @@ basic.forever(function () {
             # # # # #
             `)
     }
-    if (input.buttonIsPressed(Button.A) && input.buttonIsPressed(Button.A)) {
+    if (input.buttonIsPressed(Button.A) && !(input.buttonIsPressed(Button.B))) {
         basic.showLeds(`
             # . # . #
             # . # . #
@@ -20,7 +20,7 @@ basic.forever(function () {
             # # # # #
             `)
     }
-    if (input.buttonIsPressed(Button.B) && input.buttonIsPressed(Button.B)) {
+    if (input.buttonIsPressed(Button.B) && !(input.buttonIsPressed(Button.A))) {
         basic.showLeds(`
             # . . . #
             . # . # .
